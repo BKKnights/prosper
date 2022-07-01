@@ -39,7 +39,7 @@ The Prosper way:
 
 #### Suppose we had a contrived set of classes:
 This is considered 'long-term' code.  Our goal is that we want to find out if a Vulcan reply string is better, based on some user interaction.
-```typescript
+```ts
 class ReplyHandler {
   reply() {
     return 'See ya!';
@@ -60,7 +60,7 @@ class Service {
 ##### Without Prosper
 Using Feature Flags, and a hypothetical function `findBestReplyIndex`, which finds the best index for user.
 Note: We now have to change from sync to async, which changes usage as well.
-```typescript
+```ts
 class ReplyHandler {
   async reply(): string {
     // short lived code
@@ -91,7 +91,7 @@ class Service {
 ##### With Prosper
 Using Experiments
 
-```typescript
+```ts
 // Imports
 import { BaseExperiment, Variant } from '@bkknights/prosper';
 
@@ -237,16 +237,16 @@ class Experiment extends BaseExperiment {
 }
 
 const prosper = new Prosper()
-        .with(
-                new Experiment('My Experiments', [
-                  new Variant('Control Set: A', {
-                    [fooSymbol]: foo1
-                  }),
-                  new Variant('Deveation: B', {
-                    [fooSymbol]: foo2
-                  }),
-                ])
-        );
+  .with(
+    new Experiment('My Experiments', [
+      new Variant('Control Set: A', {
+        [fooSymbol]: foo1
+      }),
+      new Variant('Deveation: B', {
+        [fooSymbol]: foo2
+      }),
+    ])
+  );
 
 // call and `await prosper.setForUser(key)` just after database connectivity!
 
