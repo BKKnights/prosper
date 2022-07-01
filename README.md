@@ -3,6 +3,16 @@ A continuously improving, experimentation framework.
 
 [![semantic-release: prosper](https://img.shields.io/badge/semantic--release-prosper-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 
+### Installation
+#### npm
+```bash
+npm i @bkknights/prosper
+```
+#### yarn
+```bash
+yarn add @bkknights/prosper
+```
+
 ### Why
 Prosper provides a means of:
 * injecting intelligently selected experimental code that is shorted lived
