@@ -1,0 +1,4 @@
+{
+  "extends": "@kettil/semantic-release-config",
+  "branches": "main"
+}

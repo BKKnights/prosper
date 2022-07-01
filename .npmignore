@@ -1,0 +1,15 @@
+/src
+/test
+/.nyc_output
+/.github
+/coverage
+/node_modules
+coverage.lcov
+npm-debug.log
+.travis.yml
+.nvmrc
+.prettierrc
+mocha.opts
+tsconfig.json
+tslint.json
+/out/*.test.*

@@ -1,0 +1,16 @@
+language: node_js
+before_install:
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> .npmrc
+install:
+  - yarn
+script:
+  - commitlint-travis
+  - yarn validate
+  - yarn build
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    npx semantic-release@16
+  on:
+    branch: main
