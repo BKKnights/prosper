@@ -93,7 +93,7 @@ Using Experiments
 
 ```typescript
 // Imports
-import { BaseExperiment, Variant } from 'prosper';
+import { BaseExperiment, Variant } from '@bkknights/prosper';
 
 // Create a symbol to reference ReplyHandler
 const replyHandlerSymbol = Symbol('ReplyHandler');
@@ -151,7 +151,7 @@ class Service {
 #### Class Level
 Interacting with Prosper is done by creating a single instance of prosper used on classes where `@pick(Symbol)` is used.
 ```ts
-import { Prosper, pick } from './';
+import { Prosper, pick } from '@bkknights/prosper';
 
 const prosper = new Prosper();
 
@@ -168,8 +168,8 @@ class MyClass {
 Prosper is interacted with by extending the abstract class BaseExperimentSet
 
 ```ts
-import { Prosper, pick } from './';
-import { BaseExperiment } from './base-experiment';
+import { Prosper, pick } from '@bkknights/prosper';
+import { BaseExperiment } from '@bkknights/prosper/base-experiment';
 
 export class MyExperiment extends BaseExperiment<AlgorithmType> {
   public async getExperiment(): Promise<IExperiment | null> {
@@ -216,9 +216,9 @@ new Prosper().with(setupEvents(new MyExperiment()))
 Variants are written and added to an `MyExperiment`
 
 ```ts
-import { Prosper } from './';
-import { BaseExperiment } from './base-experiment';
-import { Variant } from './variant';
+import { Prosper } from '@bkknights/prosper';
+import { BaseExperiment } from '@bkknights/prosper/base-experiment';
+import { Variant } from '@bkknights/prosper/variant';
 
 const fooSymbol = Symbol('foo');
 const foo1 = () => {
