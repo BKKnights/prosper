@@ -1,6 +1,6 @@
 {
   "name": "@bkknights/prosper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A continuously improving, experimentation framework",
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   "main": "out/index.js",
   "homepage": "https://github.com/BKKnights/prosper",
   "scripts": {
-    "build": "yarn clean && tsc -p .",
+    "build": "yarn clean && tsc -p . -d",
     "clean": "npx rimraf out coverage",
     "coverage": "yarn test && open coverage/lcov-report/index.html",
     "format": "yarn prettier && yarn lint",
