@@ -1,6 +1,6 @@
 {
   "name": "@bkknights/prosper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A continuously improving, experimentation framework",
   "repository": {
     "type": "git",
@@ -50,6 +50,7 @@
     }
   },
   "dependencies": {
+    "lodash": "^4.17.20"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
@@ -75,7 +76,6 @@
     "jest": "^26.4.0",
     "jest-ts-auto-mock": "^2.0.0",
     "lint-staged": "^10.2.11",
-    "lodash": "^4.17.20",
     "prettier": "^2.1.0",
     "reflect-metadata": "^0.1.13",
     "ts-auto-mock": "^3.1.1",
