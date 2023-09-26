@@ -1,7 +1,8 @@
 {
   "name": "@bkknights/prosper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A continuously improving, experimentation framework",
+  "keywords": ["ab", "ab testing", "testing", "multi", "arm", "bandit", "multi-arm bandit", "experimentation", "experiment", "variant"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BKKnights/prosper.git"
